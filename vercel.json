@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/ghl-form/:path*",
+      "destination": "https://consult.scaleagency.io/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    }
+  ]
+}
